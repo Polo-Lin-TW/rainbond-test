@@ -42,6 +42,7 @@ async def startup_event():
 
 @app.get("/")
 async def root():
+    # print("Hello World from FastAPI!")
     return {"message": "Hello World from FastAPI!"}
 
 
