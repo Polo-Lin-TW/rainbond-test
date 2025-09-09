@@ -324,7 +324,7 @@ temp/
 logs/
 
 # Docker
-.dockerignore
+# .dockerignore
 Dockerfile.backup
 Dockerfile.backup1
 Dockerfile.backup0
