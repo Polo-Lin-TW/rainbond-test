@@ -336,3 +336,4 @@ app.db
 Dockerfile.backup
 Dockerfile.backup1
 Dockerfile.backup2
+.dockerignore.backup
