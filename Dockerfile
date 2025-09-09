@@ -2,7 +2,7 @@
 FROM node:18-alpine AS frontend-builder
 
 # 設置 npm 鏡像源以加速安裝（可選）
-RUN npm config set registry https://registry.npmmirror.com/
+# RUN npm config set registry https://registry.npmmirror.com/
 
 # Build frontend
 WORKDIR /app/frontend
