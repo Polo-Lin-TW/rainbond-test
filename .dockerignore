@@ -59,3 +59,6 @@ build/
 README.md
 CLAUDE.md
 *.md
+
+# Dockerfile backups
+Dockerfile_bk
