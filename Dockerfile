@@ -8,8 +8,8 @@ RUN npm install
 COPY frontend/ ./
 RUN npm run build
 
-# Python backend stage - 使用 Rainbond 支援的 Python 3.9.16 版本
-FROM python:3.9.16-slim
+# Python backend stage
+FROM python:3.10-slim
 
 # Set working directory
 WORKDIR /app
@@ -18,9 +18,6 @@ WORKDIR /app
 RUN apt-get update && apt-get install -y \
     gcc \
     && rm -rf /var/lib/apt/lists/*
-
-# 升級 pip 到最新版本以解決 Rainbond pip 9.0.2 錯誤
-RUN pip install --upgrade pip setuptools wheel
 
 # Copy and install Python dependencies
 COPY requirements.txt ./
