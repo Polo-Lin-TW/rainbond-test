@@ -327,6 +327,7 @@ logs/
 .dockerignore
 Dockerfile
 Dockerfile.backup
+Dockerfile.backup1
 
 # Project specific
 app.db
