@@ -1,7 +1,30 @@
-fastapi==0.104.1
-uvicorn[standard]==0.24.0
-sqlalchemy==2.0.23
-pydantic==2.5.0
-python-multipart==0.0.6
-aiofiles==23.2.1
-requests==2.31.0
+# 確保使用較新的 pip 版本以避免 Rainbond pip 9.0.2 錯誤
+pip>=22.0.0
+
+# FastAPI 核心套件 - 與 Python 3.9.16 相容的版本
+fastapi>=0.95.0,<1.0.0
+uvicorn[standard]>=0.20.0,<1.0.0
+
+# 資料驗證和序列化
+pydantic>=1.10.0,<2.0.0
+
+# 檔案上傳和表單處理
+python-multipart>=0.0.5
+
+# 資料庫相關 (如果需要)
+sqlalchemy>=1.4.0,<2.0.0
+alembic>=1.8.0
+
+# 認證相關 (如果需要)
+python-jose[cryptography]>=3.3.0
+passlib[bcrypt]>=1.7.4
+
+# HTTP 客戶端 (如果需要)
+httpx>=0.24.0
+requests>=2.28.0
+
+# 日期時間處理
+python-dateutil>=2.8.0
+
+# 環境變數管理
+python-dotenv>=0.19.0
