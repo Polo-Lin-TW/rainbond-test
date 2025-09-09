@@ -61,4 +61,4 @@ CLAUDE.md
 *.md
 
 # Dockerfile backups
-Dockerfile_bk
+Dockerfile.backup
