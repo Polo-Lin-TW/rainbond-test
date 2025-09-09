@@ -325,6 +325,7 @@ logs/
 
 # Docker
 .dockerignore
+Dockerfile
 Dockerfile.backup
 
 # Project specific
