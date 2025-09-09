@@ -331,3 +331,8 @@ Dockerfile.backup0
 
 # Project specific
 app.db
+
+#Dockerfile --- IGNORE ---
+Dockerfile.backup
+Dockerfile.backup1
+Dockerfile.backup0
